@@ -2,10 +2,9 @@ import './App.css';
 import { useState } from 'react';
 import Axios from 'axios';
 import RecipeTile from './component/RecipeTile';
+import {APP_KEY, APP_ID} from "./apikey"
 
 function App() {
-	const APP_ID = '5b442bab';
-	const APP_KEY = '41e2ac3ba3cedc93f2c50f667a910457';
 	const [query, setQuery] = useState('');
 	const [recipes, setRecipes] = useState([]);
 	const [healthLabel, setHealthLabel] = useState('vegetarian');
